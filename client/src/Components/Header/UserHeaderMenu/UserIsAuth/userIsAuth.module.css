@@ -6,6 +6,7 @@
 }
 
 .li {
+  position: relative;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -28,4 +29,14 @@
 
 .li:hover .svg {
   fill: #3563e9;
+}
+
+.notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  background-color: red;
+  width: 11px;
+  height: 11px;
 }
