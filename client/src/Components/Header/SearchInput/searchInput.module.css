@@ -1,0 +1,39 @@
+.label {
+  width: 100%;
+  max-width: 492px;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  text-align: justify;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  height: 44px;
+  border-radius: 70px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  padding: 12px 20px 12px 64px;
+  color: #1a202c;
+  outline: none;
+
+  transition: border-color ease 150ms;
+}
+
+.input::placeholder {
+  color: #596780;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.input:focus {
+  border-color: #3563e9;
+}

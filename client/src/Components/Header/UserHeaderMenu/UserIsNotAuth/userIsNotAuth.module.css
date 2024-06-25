@@ -1,0 +1,50 @@
+.login {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 19.2px */
+  letter-spacing: -0.24px;
+  padding: 12px 20px;
+  background-color: #3563e9;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color ease 150ms;
+}
+
+.login:hover {
+  background-color: #1a37a7;
+}
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  opacity: 0.8;
+  padding: 10px;
+  transition: border-color ease 150ms;
+}
+
+.btn:hover {
+  border-color: #3563e9;
+}
+
+.svg {
+  fill: #596780;
+  transition: fiil ease 150ms;
+}
+
+.btn:hover .svg {
+  fill: #3563e9;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}

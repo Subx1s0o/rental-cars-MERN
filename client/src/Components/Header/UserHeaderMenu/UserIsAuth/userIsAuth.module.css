@@ -1,0 +1,31 @@
+.ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.li {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  opacity: 0.8;
+  padding: 10px;
+  transition: border-color ease 150ms;
+}
+
+.li:hover {
+  border-color: #3563e9;
+}
+
+.svg {
+  fill: #596780;
+  transition: fiil ease 150ms;
+}
+
+.li:hover .svg {
+  fill: #3563e9;
+}
