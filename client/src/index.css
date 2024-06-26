@@ -4,6 +4,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #f6f7f9;
 }
 
 .container {
@@ -11,4 +12,20 @@ body {
   margin: auto;
   padding-left: 64px;
   padding-right: 64px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }

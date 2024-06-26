@@ -1,0 +1,82 @@
+.main {
+  width: 100%;
+}
+
+.lines_class {
+  cursor: pointer;
+  background-color: #3563e9;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+
+.arrow_class {
+  cursor: pointer;
+  background-color: #54a6ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+
+.lines_background {
+  background-image: url(../../../materials/lines.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.arrows_background {
+  border-radius: 10px;
+  background-image: url(../../../materials/arrows.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+}
+
+.textContent {
+  max-width: 284px;
+}
+
+.textContent h1 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.textContent p {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  margin-bottom: 20px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .arrows_background {
+    background-image: url(../../../materials/arrows@2x.jpg);
+  }
+  .lines_background {
+    background-image: url(../../../materials/lines@2x.jpg);
+  }
+}

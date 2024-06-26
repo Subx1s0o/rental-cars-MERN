@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.category {
+  color: #90a3bf;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+.link {
+  color: #3563e9;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  padding: 10px 0px 10px 20px;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  flex-basis: calc((100% - 96px) / 4);
+}

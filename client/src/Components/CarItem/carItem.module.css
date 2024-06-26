@@ -1,0 +1,25 @@
+.li {
+  border-radius: 10px;
+  background: #fff;
+  padding: 24px;
+}
+
+.title {
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+  color: #1a202c;
+}
+
+.category {
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+  color: #90a3bf;
+}

@@ -13,7 +13,7 @@ export default function SearchInput() {
         type="text"
         name="search"
         id="search"
-        placeholder="Search something here..."
+        placeholder="Search something..."
       />
     </label>
   );
