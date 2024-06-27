@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import css from "./popularCarsList.module.css";
 import CarItem from "../CarItem/CarItem";
-
+import { useState } from "react";
 export default function PopularCarsList() {
   const items = [
     {
@@ -25,7 +25,7 @@ export default function PopularCarsList() {
       discountedPrice: 0,
     },
     {
-      id: "3",
+      id: "u6tuyu5",
       title: "Koenigsegg",
       category: "Sport",
       transmission: "Manual",
@@ -35,56 +35,73 @@ export default function PopularCarsList() {
       discountedPrice: 20,
     },
     {
-      id: "3",
+      id: "u56yut6u",
       title: "Koenigsegg",
       category: "Sport",
       transmission: "Manual",
       places: 2,
       fuel: "90L",
       price: 80,
-      discountedPrice: 20,
+      discountedPrice: 50,
     },
     {
-      id: "3",
+      id: "86567566u",
       title: "Koenigsegg",
       category: "Sport",
       transmission: "Manual",
       places: 2,
       fuel: "90L",
       price: 80,
-      discountedPrice: 20,
+      discountedPrice: 40,
     },
     {
-      id: "3",
+      id: "568568",
       title: "Koenigsegg",
       category: "Sport",
       transmission: "Manual",
       places: 2,
       fuel: "90L",
       price: 80,
-      discountedPrice: 20,
+      discountedPrice: 30,
     },
     {
-      id: "3",
+      id: "86685",
       title: "Koenigsegg",
       category: "Sport",
       transmission: "Manual",
       places: 2,
       fuel: "90L",
       price: 80,
-      discountedPrice: 20,
+      discountedPrice: 50,
     },
     {
-      id: "3",
+      id: "6",
       title: "Koenigsegg",
       category: "Sport",
       transmission: "Manual",
       places: 2,
       fuel: "90L",
       price: 80,
-      discountedPrice: 20,
+      discountedPrice: 60,
+      image: "../materials/car1.png",
     },
   ];
+
+  const user = {
+    id: "user123",
+    favoriteItems: ["1", "3", "5"], // список айді улюблених товарів
+  };
+
+  const [favorites, setFavorites] = useState(user.favoriteItems);
+  const toggleFavorite = (productId) => {
+    setFavorites((prevFavorites) => {
+      if (prevFavorites.includes(productId)) {
+        return prevFavorites.filter((id) => id !== productId);
+      } else {
+        return [...prevFavorites, productId];
+      }
+    });
+  };
 
   return (
     <>
@@ -97,7 +114,14 @@ export default function PopularCarsList() {
 
       <ul className={css.ul}>
         {items.map((item) => {
-          return <CarItem data={item} key={item.id} />;
+          return (
+            <CarItem
+              data={item}
+              key={item.id}
+              isFavorite={favorites.includes(item.id)}
+              toggleFavorite={toggleFavorite}
+            />
+          );
         })}
       </ul>
     </>

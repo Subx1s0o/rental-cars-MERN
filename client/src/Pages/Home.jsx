@@ -4,10 +4,16 @@ import PopularCarsList from "../Components/PopularCarsList/PopularCarsList";
 export default function Home() {
   return (
     <main>
-      <div className="container">
-        <Posters />
-        <PopularCarsList />
-      </div>
+      <section>
+        <div className="container">
+          <Posters />
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <PopularCarsList />
+        </div>
+      </section>
     </main>
   );
 }

@@ -2,6 +2,7 @@
   border-radius: 10px;
   background: #fff;
   padding: 24px;
+  width: calc((100% - 96px) / 4);
 }
 
 .title {
@@ -22,4 +23,97 @@
   line-height: 150%; /* 21px */
   letter-spacing: -0.28px;
   color: #90a3bf;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul li {
+  color: #90a3bf;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.price_and_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  color: #1a202c;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.per {
+  color: #90a3bf;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.pricesDiv {
+  display: flex;
+  align-items: center;
+}
+
+.discStyle {
+  color: #90a3bf;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: line-through;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 4px;
+  background: #3563e9;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  transition: background ease 150ms;
+}
+
+.button:hover,
+.button:focus {
+  background: #1d41ae;
 }
