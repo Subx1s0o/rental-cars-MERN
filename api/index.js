@@ -6,6 +6,7 @@ import connectDB from "./DB/main.js";
 import passport from "passport";
 import "./passport-settings.js";
 import bodyParser from "body-parser";
+import carsRouter from "./routes/carsRouter/carsRouter.js";
 config();
 connectDB();
 
@@ -19,7 +20,7 @@ app.use(bodyParser.json());
 app.use(passport.initialize());
 
 app.use("/api/user", userRouter);
-
+app.use("/api/cars", carsRouter);
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {

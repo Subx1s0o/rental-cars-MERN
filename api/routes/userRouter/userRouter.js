@@ -46,7 +46,7 @@ userRouter.post("/register", async (req, res) => {
     });
 
     const accessToken = jwt.sign({ id: newUser._id }, process.env.JWT_KEY, {
-      expiresIn: "15m",
+      expiresIn: "30m",
     });
 
     const refreshToken = jwt.sign(
@@ -85,7 +85,7 @@ userRouter.post("/login", async (req, res) => {
       { id: existingUser._id },
       process.env.JWT_KEY,
       {
-        expiresIn: "15m",
+        expiresIn: "30m",
       }
     );
 
@@ -112,7 +112,7 @@ userRouter.post("/refresh", async (req, res) => {
     const userId = decoded.id;
 
     const accessToken = jwt.sign({ id: userId }, process.env.JWT_KEY, {
-      expiresIn: "15m",
+      expiresIn: "30m",
     });
 
     res.json({ accessToken });
