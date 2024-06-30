@@ -1,14 +1,18 @@
-import { useState } from "react";
 import UserIsAuth from "./UserIsAuth/UserIsAuth";
 import UserIsNotAuth from "./UserIsNotAuth/UserIsNotAuth";
-export default function UserHeaderMenu() {
-  const [a, setA] = useState(true); // Replace with actual authentication logic
+import { useSelector } from "react-redux";
 
-  // Replace `false` or "true" with  actual authentication logic to determine if user is authenticated
+import {
+  selectIsLoggedIn,
+  selectIsRefreshing,
+} from "../../../redux/user/selectors";
+export default function UserHeaderMenu() {
+  const isLoggedIn = useSelector(selectIsLoggedIn);
+  const isRefreshing = useSelector(selectIsRefreshing);
 
   return (
     <div className="">
-      {a ? (
+      {!isRefreshing && isLoggedIn ? (
         // Content when authenticated
         <UserIsAuth />
       ) : (

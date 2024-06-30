@@ -1,0 +1,52 @@
+.banners {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.skeleton {
+  background-color: #bbe1fe !important;
+}
+.skeletonSpecial {
+  background-color: #7cc5fd !important;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.list li {
+  position: relative;
+}
+
+.up {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.ul {
+  position: absolute;
+  left: 24px;
+  bottom: 120px;
+  display: flex;
+  gap: 16px;
+}
+
+.down {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  align-items: center;
+  gap: 30px;
+}
